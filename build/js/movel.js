@@ -27,14 +27,14 @@ function Movel(elem) {
     return Math.random() * (max - min) + min;
   }
 
-  // Get random top coords
+  // Get top coords
   function getCoordsTop(elem) { // кроме IE8-
     var box = elem.getBoundingClientRect();
     var top = box.top + pageYOffset;
     return top;
   }
 
-  // Get random left coords
+  // Get left coords
   function getCoordsLeft(elem) { // кроме IE8-
     var box = elem.getBoundingClientRect();
     var left = box.left + pageXOffset;
@@ -44,7 +44,7 @@ function Movel(elem) {
   this.elem = document.querySelectorAll(elem.elem);
 
   if (elem.elem === undefined) {
-    this.elem = document.querySelectorAll(".moving-element");
+    this.elem = document.querySelectorAll('.moving-element');
   }
 
   var elemsArr = this.elem;
