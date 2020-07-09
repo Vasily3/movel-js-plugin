@@ -1,4 +1,4 @@
-## Movel - Native JavaScript plugin for random movement of elements
+# Movel - Native JavaScript plugin for random movement of elements
 ## Краткая инструкция по работе
 ### Для начала работы у вас должент быть установлен:
 * Node.js v.10.15.3
