@@ -1,0 +1,212 @@
+.moving-element {
+  position: fixed;
+
+  &--fly {
+    width: 60px;
+    height: 60px;
+  }
+
+  &--ufo {
+    position: fixed;
+    width: 90px;
+    height: 90px;
+
+    div {
+      position: absolute;
+      top: 42px;
+      left: -30px;
+      z-index: -1;
+
+      width: 150px;
+      height: 0;
+      border-bottom: 100px solid yellow;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+
+      animation: ufo-ray 1s infinite linear;
+    }
+
+    @include tablet {
+      width: 45px;
+      height: 45px;
+
+      div {
+        top: 19px;
+        left: -15px;
+
+        width: 75px;
+        border-bottom: 50px solid yellow;
+        border-left: 17px solid transparent;
+        border-right: 17px solid transparent;
+      }
+    }
+  }
+
+  &--monroe {
+    width: 150px;
+    height: 165px;
+
+    @include tablet {
+      width: 75px;
+      height: 85px;
+    }
+  }
+
+  &--dance {
+    width: 180px;
+    height: 216px;
+
+    img {
+      animation: scale-rotation 777ms infinite linear;
+    }
+
+    @include tablet {
+      width: 90px;
+      height: 108px;
+    }
+  }
+
+  &--dollars {
+    width: 180px;
+    height: 130px;
+
+    animation: rotation 3s infinite linear reverse;
+
+    @include tablet {
+      width: 90px;
+      height: 65px;
+    }
+  }
+
+  &--pizza {
+    width: 132px;
+    height: 135px;
+
+    animation: rotation 1.5s infinite linear;
+
+    @include tablet {
+      width: 66px;
+      height: 67px;
+    }
+  }
+
+  &--dog {
+    width: 153px;
+    height: 160px;
+
+    @include tablet {
+      width: 76px;
+      height: 80px;
+    }
+  }
+
+  &--cat {
+    width: 133px;
+    height: 140px;
+
+    animation: low-rotation 2s infinite linear;
+
+    @include tablet {
+      width: 66px;
+      height: 70px;
+    }
+  }
+
+  &--boomerang {
+    width: 204px;
+    height: 100px;
+
+    animation: rotation 0.5s infinite linear;
+
+    @include tablet {
+      width: 102px;
+      height: 50px;
+    }
+  }
+
+  &--karate {
+    width: 170px;
+    height: 140px;
+
+    @include tablet {
+      width: 85px;
+      height: 70px;
+    }
+  }
+
+  &--calibri {
+    width: 170px;
+    height: 150px;
+
+    img {
+      animation: scale-rotation 2ms infinite linear;
+    }
+
+    @include tablet {
+      width: 85px;
+      height: 75px;
+    }
+  }
+
+  &--flash {
+    width: 90px;
+    height: 140px;
+
+    animation: flash 100ms infinite linear;
+
+    @include tablet {
+      width: 45px;
+      height: 70px;
+    }
+  }
+
+  &--plate {
+    width: 170px;
+    height: 140px;
+
+    @include tablet {
+      width: 85px;
+      height: 70px;
+    }
+  }
+
+  &--sushi-cat {
+    width: 200px;
+    height: 160px;
+
+    @include tablet {
+      width: 100px;
+      height: 80px;
+    }
+  }
+
+  &--bart {
+    width: 250px;
+    height: 262px;
+
+    @include tablet {
+      width: 125px;
+      height: 131px;
+    }
+  }
+
+  &--ozzy {
+    width: 150px;
+    height: 330px;
+
+    @include tablet {
+      width: 75px;
+      height: 165px;
+    }
+  }
+
+  &--girl {
+    width: 170px;
+    height: 233px;
+
+    @include tablet {
+      width: 85px;
+      height: 116px;
+    }
+  }
+}

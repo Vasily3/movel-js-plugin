@@ -1,0 +1,81 @@
+@keyframes ufo-ray {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes low-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes scale-rotation {
+  0% {
+    transform: scaleX(0);
+  }
+
+  25% {
+    transform: scaleX(-1);
+  }
+
+  75% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes flash {
+  0% {
+    transform: translate(33%, 33%) rotate(20deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(20deg);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
