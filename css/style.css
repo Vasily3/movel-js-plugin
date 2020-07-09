@@ -607,6 +607,9 @@ img {
       .moving-element--ufo {
         width: 45px;
         height: 45px; }
+        .moving-element--ufo svg {
+          width: 45px;
+          height: 45px; }
         .moving-element--ufo div {
           top: 19px;
           left: -15px;
