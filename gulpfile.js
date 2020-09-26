@@ -16,15 +16,15 @@ var server = require('browser-sync').create();
 gulp.task('css', function () {
   return gulp.src('source/scss/style.scss')
     .pipe(plumber())
-    .pipe(sourcemap.init())
+    // .pipe(sourcemap.init())
     .pipe(scss())
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('build/css'))
+    // .pipe(gulp.dest('build/css'))
     .pipe(csso())
     .pipe(rename('style.min.css'))
-    .pipe(sourcemap.write('.'))
+    // .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream());
 });
@@ -36,14 +36,14 @@ gulp.task('html', function () {
 
 gulp.task('js', function () {
   return gulp.src('source/js/*.js')
-    .pipe(sourcemap.init())
+    // .pipe(sourcemap.init())
     .pipe(plumber())
-    .pipe(gulp.dest('build/js'))
+    // .pipe(gulp.dest('build/js'))
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(sourcemap.write('./'))
+    // .pipe(sourcemap.write('./'))
     .pipe(gulp.dest('build/js'));
 });
 
